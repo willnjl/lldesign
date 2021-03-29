@@ -43,7 +43,8 @@
     "wpackagist-plugin/advanced-custom-fields": "^5.9",
     "wpackagist-plugin/custom-post-type-ui": "^1.8",
     "wpackagist-plugin/what-the-file": "^1.5",
-    "wpackagist-plugin/contact-form-7": "^5.4"
+    "wpackagist-plugin/contact-form-7": "^5.4",
+    "wpackagist-plugin/wp-migrate-db": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.8",
