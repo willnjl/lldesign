@@ -1,0 +1,28 @@
+section {
+  overflow: hidden;
+  position: relative;
+}
+
+.grey-bg {
+  background: $grey;
+}
+.grey-bg--bottom {
+  position: relative;
+  background: white;
+  background: linear-gradient(0deg, $grey calc(50% + 4rem), white 50%);
+  z-index: 1;
+}
+.grey-bg--bottom--qtr {
+  position: relative;
+  background: white;
+  background: linear-gradient(0deg, $grey calc(25% + 4rem), white 75%);
+  z-index: 1;
+}
+.grey-bg--top {
+  background: $grey;
+  background: linear-gradient(0deg, white 50%, $grey 50%);
+}
+.grey-bg--top--qtr {
+  background: $grey;
+  background: linear-gradient(0deg, white 75%, $grey 25%);
+}

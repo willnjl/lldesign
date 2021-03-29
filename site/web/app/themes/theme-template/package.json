@@ -1,0 +1,22 @@
+{
+  "name": "theme_template",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "node-sass": "^5.0.0",
+    "rellax": "^1.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

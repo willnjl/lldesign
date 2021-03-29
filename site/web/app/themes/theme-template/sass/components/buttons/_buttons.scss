@@ -1,0 +1,29 @@
+$btn-radius: 50px;
+$btn-border: 3px solid;
+
+.btn {
+  background-color: $purple;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: $btn-radius;
+  color: $pink;
+  &:hover {
+    background-color: $purple-light;
+  }
+}
+
+.btn-3d {
+  box-shadow: 2px 2px $blue;
+  &:active {
+    box-shadow: 0px 0px;
+    transform: translate(2px, 2px);
+  }
+}
+
+.wpcf7-submit {
+  @extend .btn;
+  cursor: pointer;
+  max-width: 200px;
+  margin-left: auto;
+}

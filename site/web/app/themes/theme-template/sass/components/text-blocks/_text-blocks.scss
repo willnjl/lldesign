@@ -1,0 +1,21 @@
+@import "testimonial";
+
+.text-block {
+  .text_heading {
+    margin-bottom: 4rem;
+  }
+}
+
+.text_heading {
+  font-size: 3.2rem;
+}
+
+.text-block-order {
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    justify-content: end;
+  }
+}

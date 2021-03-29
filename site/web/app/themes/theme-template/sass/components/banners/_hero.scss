@@ -1,0 +1,20 @@
+.hero {
+  position: relative;
+  z-index: -1;
+  &:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    right: 100%;
+    background: rgba(0, 0, 5, 0.3);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 5, 0.3) 55%,
+      rgba(0, 0, 5, 0) 100%
+    );
+  }
+}

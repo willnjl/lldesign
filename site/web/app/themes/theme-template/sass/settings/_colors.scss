@@ -1,0 +1,36 @@
+$blue: #33387c;
+$text-default: #28354f;
+$pink: #fff0f9;
+$purple: #523563;
+$purple-light: #8659a0;
+$black: #000;
+$offblack: #101010;
+$yellow: #ffde00;
+$grey: #f0f0f0;
+$text-grey: #959595;
+
+:root {
+  background-color: white;
+}
+
+.white-bg {
+  background-color: white;
+}
+.blue-bg {
+  background-color: #27354f;
+  color: white;
+}
+
+.grey-bg {
+  background-color: $grey;
+}
+
+.blue {
+  color: $blue;
+}
+.pink {
+  color: $pink;
+}
+.purple {
+  color: $purple;
+}

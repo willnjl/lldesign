@@ -1,0 +1,79 @@
+.col {
+  display: block;
+  padding-right: 12px;
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.col > *:first-child {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.five-cols .col {
+  width: 20%;
+}
+
+.four-cols .col {
+  width: 25%;
+}
+
+.three-cols .col {
+  width: 33.33%;
+}
+
+.two-cols .col {
+  width: 50%;
+}
+
+.fifths .col {
+  width: 20%;
+}
+
+.two-thirds {
+  width: 66.66%;
+}
+
+.one-third {
+  width: 33.33%;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.flex-4 {
+  flex: 4;
+}
+@media only screen and (max-width: $bp-l) {
+  .three-cols,
+  .four-cols,
+  .five-cols {
+    .col {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-m) {
+  .two-cols {
+    .col {
+      width: 100%;
+    }
+  }
+  .two-thirds {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: $bp-s) {
+  .two-thirds {
+    width: 100%;
+  }
+}

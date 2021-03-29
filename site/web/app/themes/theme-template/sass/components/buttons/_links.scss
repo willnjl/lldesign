@@ -1,0 +1,23 @@
+a.link,
+.link {
+  color: $purple;
+  &:hover {
+    color: $purple-light;
+    transition: 0.3s;
+  }
+}
+
+.link--order {
+  margin-left: 1rem;
+  i {
+    margin-left: 12px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $purple-light;
+    i {
+      transition: 0.3s;
+      transform: translateX(5px);
+    }
+  }
+}

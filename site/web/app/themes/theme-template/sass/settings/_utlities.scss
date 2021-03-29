@@ -1,0 +1,37 @@
+.bg-default {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  @extend .bg-default;
+}
+
+.bg-logo {
+  position: absolute;
+  z-index: -1;
+  fill: #f4f4f4;
+}
+
+.bg-text {
+  position: absolute;
+  z-index: -1;
+  color: #f5f5f5;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #fff;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.test {
+  border: 1px solid red;
+}
