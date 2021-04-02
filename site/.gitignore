@@ -23,3 +23,8 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+
+#plugins
+!web/app/plugins/advanced-custom-fields-pro
+
+!web/app/plugins/wp-migrate-db
