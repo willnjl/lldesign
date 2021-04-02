@@ -1,3 +1,8 @@
+<?php 
+
+$img = get_field('banner_image');
+?>
+
 <section class="banner hero">
         <div class="wrap">
             <div class="vert-center">
@@ -6,5 +11,5 @@
                     </h1>
             </div>
         </div>
-        <img src="<?php echo esc_html(wp_get_attachment_image_src(47, 'full')[0]) ?>" class="rellax bg-img" alt="Watercolour" srcset="" data-rellax-speed="-3">
+        <img src="<?php echo esc_html($img['url']) ?>" class="rellax bg-img" alt="Watercolour" srcset="" data-rellax-speed="-3">
 	</section>
