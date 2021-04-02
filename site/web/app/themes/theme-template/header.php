@@ -27,7 +27,11 @@
 			<div class="flex">
 				<div class="site-branding">
 					<a href="/">
-						<img src="<?= _wp_upload_dir()['url']?>/isla_500x500.45702493_j5jbi33s-3-e1616605093460.jpg" alt="" srcset="">
+					<?php
+						$logo = get_theme_mod( 'custom_logo' );
+						$image = wp_get_attachment_image_src( $logo , 'thumbnail' );
+					?>
+						<img src="<?= $image['url'] ?>" alt="" srcset="">
 					</a>				
 				</div><!-- .site-branding -->
 				<div class="sidenav">
