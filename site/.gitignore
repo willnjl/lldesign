@@ -27,4 +27,4 @@ wp-cli.local.yml
 #plugins
 !web/app/plugins/advanced-custom-fields-pro
 
-!web/app/plugins/wp-migrate-db
+!web/app/plugins/wp-sync-db*
