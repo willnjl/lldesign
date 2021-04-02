@@ -31,7 +31,7 @@
 						$logo = get_theme_mod( 'custom_logo' );
 						$image = wp_get_attachment_image_src( $logo , 'thumbnail' );
 					?>
-						<img src="<?= $image['url'] ?>" alt="" srcset="">
+						<img src="<?= $image[0] ?>" alt="" srcset="">
 					</a>				
 				</div><!-- .site-branding -->
 				<div class="sidenav">
