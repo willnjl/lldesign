@@ -21,7 +21,8 @@ $link-pad: 4vh 0;
     .main-navigation {
       width: 100%;
     }
-    .menu-item {
+    .menu-item,
+    .page_item {
       color: $link-col;
       // background-color: #efefef;
       margin-left: auto;
@@ -60,7 +61,8 @@ $link-pad: 4vh 0;
     ul {
       height: 100%;
     }
-    .menu-item {
+    .menu-item,
+    .page_item {
       color: $link-col;
       transition: 0.2s;
       a {
@@ -74,6 +76,7 @@ $link-pad: 4vh 0;
       }
     }
     .menu-item:hover,
+    .page_item:hover,
     .current_page_item {
       color: $link-col--active;
       transition: 0.2s;

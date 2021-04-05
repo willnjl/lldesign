@@ -31,7 +31,8 @@ $navlink-col: $purple;
     }
   }
 
-  .menu-item {
+  .menu-item,
+  .page_item {
     color: $navlink-col;
     margin-left: 3vw;
     font-size: $p-large;

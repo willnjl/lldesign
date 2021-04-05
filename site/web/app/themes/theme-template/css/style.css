@@ -885,16 +885,19 @@ img.gutter {
 		align-items: center;
 		height: 100%;
 	}
-	.menu-item {
+	.menu-item,
+	.page_item {
 		color: #523563;
 		margin-left: 3vw;
 		font-size: 1.3rem;
 	}
-	.menu-item:hover {
+	.menu-item:hover,
+	.page_item:hover {
 		color: #d44dd4;
 		transition: 0.2s;
 	}
-	.menu-item:hover a {
+	.menu-item:hover a,
+	.page_item:hover a {
 		text-decoration: none;
 	}
 	.current_page_item {
@@ -914,14 +917,16 @@ img.gutter {
 	.sidenav .main-navigation {
 		width: 100%;
 	}
-	.sidenav .menu-item {
+	.sidenav .menu-item,
+	.sidenav .page_item {
 		color: #523563;
 		margin-left: auto;
 		text-align: right;
 		border-bottom: 1px solid #fff0f9;
 		min-width: 200px;
 	}
-	.sidenav .menu-item a:hover {
+	.sidenav .menu-item a:hover,
+	.sidenav .page_item a:hover {
 		padding-right: 1rem;
 		transition: 0.2s;
 	}
@@ -946,20 +951,24 @@ img.gutter {
 	.sidenav ul {
 		height: 100%;
 	}
-	.sidenav .menu-item {
+	.sidenav .menu-item,
+	.sidenav .page_item {
 		color: #523563;
 		transition: 0.2s;
 	}
-	.sidenav .menu-item a {
+	.sidenav .menu-item a,
+	.sidenav .page_item a {
 		padding: 4vh 0;
 		display: block;
 		text-decoration: none;
 	}
-	.sidenav .menu-item a:hover {
+	.sidenav .menu-item a:hover,
+	.sidenav .page_item a:hover {
 		padding-right: 1rem;
 		transition: 0.2s;
 	}
 	.sidenav .menu-item:hover,
+	.sidenav .page_item:hover,
 	.sidenav .current_page_item {
 		color: #523563;
 		transition: 0.2s;
