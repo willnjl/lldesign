@@ -248,7 +248,7 @@ footer {
 	}
 	section,
 	footer {
-		padding: 2rem 2rem;
+		padding: 4rem 2rem;
 	}
 	.header-pad {
 		padding: 10px 2rem;
@@ -860,9 +860,8 @@ img.gutter {
 
 /* Nav */
 .site-header {
-	font-family: "Homemade Apple", cursive;
 	text-transform: lowercase;
-	letter-spacing: 6px;
+	letter-spacing: 1px;
 	font-weight: 400;
 	position: absolute;
 	top: 0;
@@ -906,9 +905,9 @@ img.gutter {
 
 @media screen and (max-width: 900px) {
 	.sidenav {
-		max-width: 400px;
+		max-width: 300px;
 		border-right: #333 solid 4px;
-		background-color: #f0f0f0;
+		background-color: #efefefef;
 		font-size: 1.3rem;
 		padding: 2rem 0;
 	}
@@ -919,7 +918,7 @@ img.gutter {
 		color: #523563;
 		margin-left: auto;
 		text-align: right;
-		border-bottom: 1px solid #33387c;
+		border-bottom: 1px solid #fff0f9;
 		min-width: 200px;
 	}
 	.sidenav .menu-item a:hover {
@@ -952,7 +951,7 @@ img.gutter {
 		transition: 0.2s;
 	}
 	.sidenav .menu-item a {
-		padding: 2vh 0;
+		padding: 4vh 0;
 		display: block;
 		text-decoration: none;
 	}
@@ -1000,6 +999,8 @@ img.gutter {
 }
 
 .site-branding a {
+	font-size: 1.5rem;
+	font-family: "Homemade Apple", cursive;
 	display: block;
 }
 
@@ -1028,6 +1029,7 @@ img.gutter {
 
 .banner {
 	height: 400px;
+	overflow: hidden;
 }
 
 .banner .wrap {
@@ -1060,6 +1062,7 @@ img.gutter {
 
 .banner {
 	height: 400px;
+	overflow: hidden;
 }
 
 .banner .wrap {
@@ -1442,8 +1445,8 @@ textarea {
 
 .block-circles .circle {
 	overflow: hidden;
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	position: absolute;
 	border-radius: 100%;
 }
@@ -1462,19 +1465,18 @@ textarea {
 	border: 5px solid #523563;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 720px) {
 	.page-home .block-circles {
 		margin-left: 4rem;
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 720px) {
 	.page-home .block-circles {
 		margin-left: unset;
-		margin: auto;
 		width: 350px;
 		height: 350px;
-		margin-top: 4rem;
+		margin: 4rem auto;
 	}
 	.page-home .block-circles .circle {
 		width: 225px;
@@ -1484,13 +1486,12 @@ textarea {
 
 @media screen and (max-width: 500px) {
 	.page-home .block-circles {
-		margin-top: 8rem;
 		width: 250px;
 		height: 250px;
 	}
 	.page-home .block-circles .circle {
-		width: 155px;
-		height: 155px;
+		width: 175px;
+		height: 175px;
 	}
 }
 

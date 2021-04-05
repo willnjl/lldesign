@@ -1,16 +1,16 @@
 // Sidenav Quick Settings
-$sidenav-bg: $grey;
+$sidenav-bg: #efefefef;
 $sidenav-pad: 2rem 0;
 $sidenav-fontsize: $p-large;
 
 // Link Quick Settings
 $link-col: $purple;
 $link-col--active: $purple;
-$link-pad: 2vh 0;
+$link-pad: 4vh 0;
 
 @media screen and (max-width: $bp-l) {
   .sidenav {
-    max-width: 400px;
+    max-width: 300px;
     border-right: #333 solid 4px;
     background-color: $sidenav-bg;
     font-size: $sidenav-fontsize;
@@ -23,9 +23,10 @@ $link-pad: 2vh 0;
     }
     .menu-item {
       color: $link-col;
+      // background-color: #efefef;
       margin-left: auto;
       text-align: right;
-      border-bottom: 1px solid $blue;
+      border-bottom: 1px solid $pink;
       min-width: 200px;
       a {
         &:hover {

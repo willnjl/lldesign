@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="sidenav-open">
+<body class="">
 	<div id="page" class="site">
 	<header id="masthead" class="site-header header-pad">
 		<div class="wrap">

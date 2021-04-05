@@ -22,7 +22,7 @@ $banner_img = get_field('banner_image');
 	<?php get_template_part('template-parts/banner','mountains'); ?> 
 	<section class="gutterless">
 		<div class="wrap">
-			<div class="row-l">
+			<div class="row-m">
 				<p class="p-l trans fade fade-in swipe-left flex-3">
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis recusandae nisi fugit quia modi voluptatibus tempore corporis libero vitae, perspiciatis enim nihil sunt, nesciunt, voluptas iusto velit facere laboriosam tenetur?
 				</p>

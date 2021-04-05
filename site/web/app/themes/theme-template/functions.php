@@ -146,12 +146,12 @@ function fiteenten_scripts() {
 	/* 
 		local
 	*/
-	wp_enqueue_script( 'fiteenten-app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-intersection-observers', get_template_directory_uri() . '/js/intersection-observers.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-carousels', get_template_directory_uri() . '/js/carousels.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-style-switcher', get_template_directory_uri() . '/js/style-switcher.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-rellax.bundle', get_template_directory_uri() . '/js/rellax.bundle.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fiteenten-app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
 	/* 
 		Packages
 	*/
