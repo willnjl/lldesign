@@ -110,4 +110,4 @@ if($q->have_posts()) : ?>
 </section>
 <?php endif; ?>
 
-<?php get_template_part('template-parts/contact', 'small'); ?>
+<?php get_template_part('template-parts/form', 'contact'); ?>

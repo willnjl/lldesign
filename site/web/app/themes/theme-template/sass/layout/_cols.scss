@@ -60,6 +60,9 @@
       margin-bottom: 1em;
     }
   }
+  .two-thirds {
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: $bp-m) {
@@ -69,7 +72,7 @@
     }
   }
   .two-thirds {
-    width: 75%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: $bp-s) {

@@ -20,29 +20,25 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="">
+<body class="sidenav-open">
 	<div id="page" class="site">
 	<header id="masthead" class="site-header header-pad">
 		<div class="wrap">
 			<div class="flex">
-				<div class="site-branding">
+				<div class="site-branding" class="span-secondary">
 					<a href="/">
-					<?php
-						$logo = get_theme_mod( 'custom_logo' );
-						$image = wp_get_attachment_image_src( $logo , 'thumbnail' );
-					?>
-						<img src="<?= $image[0] ?>" alt="" srcset="">
+ 						Louise Leighton
 					</a>				
 				</div><!-- .site-branding -->
 				<div class="sidenav">
-						<nav id="site-navigation" class="main-navigation flex">
+						<nav id="site-navigation" class="main-navigation row-l">
 								<?php
-									// wp_nav_menu(
-									// 	array(
-									// 		'theme_location' => 'menu-1',
-									// 		'menu_id'        => 'Menu 1',
-									// 		)
-									// 	);
+									wp_nav_menu(
+										array(
+											'theme_location' => 'menu-1',
+											'menu_id'        => 'Menu 1',
+											)
+										);
 									?>
 						</nav>
 				</div>

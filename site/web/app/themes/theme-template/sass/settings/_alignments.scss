@@ -8,6 +8,7 @@ $bp-xl: 1200px;
 $bp-l: 900px;
 $bp-m: 720px;
 $bp-s: 500px;
+$bp-xs: 450px;
 
 $border-radius: 15px;
 
@@ -43,7 +44,7 @@ footer {
     padding: 4rem 4vw;
   }
   .header-pad {
-    padding: 10px 4vw;
+    padding: 1rem 4vw;
   }
 }
 @media screen and (max-width: $bp-m) {

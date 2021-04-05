@@ -20,7 +20,7 @@ $banner_img = get_field('banner_image');
 
 	<main id="primary" class="site-main">
 	<?php get_template_part('template-parts/banner','mountains'); ?> 
-    <?php get_template_part('template-parts/contact', 'small'); ?>
+	<?php get_template_part('template-parts/form', 'contact'); ?>
 	</main><!-- #main -->
 
 <?php

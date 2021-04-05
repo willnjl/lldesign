@@ -50,13 +50,29 @@
   flex-direction: column;
 }
 
-.m-r-auto {
-  margin-right: auto;
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.flex-1 {
+  flex: 1;
 }
 
 .m-l-auto {
   margin-left: auto;
 }
+.m-r-auto {
+  margin-right: auto;
+}
+.m-auto {
+  margin: auto;
+}
+
 .vert-center {
   display: flex;
   flex-direction: column;
@@ -79,15 +95,16 @@
     flex-direction: column;
   }
 }
+
 @media screen and (max-width: $bp-m) {
-  .grid {
-    display: flex;
-  }
   .row-m {
     flex-direction: column;
   }
 }
 @media screen and (max-width: $bp-s) {
+  .grid {
+    display: flex;
+  }
   .row-s {
     flex-direction: column;
   }

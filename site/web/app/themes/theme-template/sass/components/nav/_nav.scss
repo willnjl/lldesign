@@ -1,5 +1,5 @@
 $header-bg: $pink;
-$navlink-col: #d44dd4;
+$navlink-col: $purple;
 .site-header {
   font-family: $font-secondary;
   text-transform: lowercase;
@@ -11,6 +11,7 @@ $navlink-col: #d44dd4;
   width: 100%;
   align-items: center;
   .flex {
+    align-items: center;
     justify-content: space-between;
   }
   background-color: $header-bg;
@@ -31,9 +32,20 @@ $navlink-col: #d44dd4;
     }
   }
 
-  .page_item {
+  .menu-item {
     color: $navlink-col;
     margin-left: 3vw;
     font-size: $p-large;
+    &:hover {
+      color: $hotpink;
+      transition: 0.2s;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .current_page_item {
+    color: $hotpink;
+    pointer-events: none;
   }
 }

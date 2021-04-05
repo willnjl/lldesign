@@ -1,11 +1,11 @@
 // Sidenav Quick Settings
-$sidenav-bg: #eee;
+$sidenav-bg: $grey;
 $sidenav-pad: 2rem 0;
 $sidenav-fontsize: $p-large;
 
 // Link Quick Settings
-$link-col: $blue;
-$link-col--active: white;
+$link-col: $purple;
+$link-col--active: $purple;
 $link-pad: 2vh 0;
 
 @media screen and (max-width: $bp-l) {
@@ -18,7 +18,11 @@ $link-pad: 2vh 0;
   }
 
   .sidenav {
-    .page_item {
+    .main-navigation {
+      width: 100%;
+    }
+    .menu-item {
+      color: $link-col;
       margin-left: auto;
       text-align: right;
       border-bottom: 1px solid $blue;
@@ -55,7 +59,7 @@ $link-pad: 2vh 0;
     ul {
       height: 100%;
     }
-    .page_item {
+    .menu-item {
       color: $link-col;
       transition: 0.2s;
       a {
@@ -68,7 +72,7 @@ $link-pad: 2vh 0;
         }
       }
     }
-    .page_item:hover,
+    .menu-item:hover,
     .current_page_item {
       color: $link-col--active;
       transition: 0.2s;
