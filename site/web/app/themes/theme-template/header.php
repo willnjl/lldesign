@@ -31,16 +31,23 @@
 					</a>				
 				</div><!-- .site-branding -->
 				<div class="sidenav">
-						<nav id="site-navigation" class="main-navigation row-l">
-								<?php
-									wp_nav_menu(
-										array(
-											'theme_location' => 'menu-1',
-											'menu_id'        => 'Menu 1',
-											)
-										);
-									?>
-						</nav>
+					<nav id="site-navigation" class="main-navigation row-l">
+							<?php
+								wp_nav_menu(
+									array(
+										'menu' => 'Menu 1',
+										'menu_id'        => 'Menu 1',
+										)
+									);
+								?>
+					</nav>
+					<div class="sidenav__logo">
+						<div class="site-branding" class="span-secondary">
+							<a href="/">
+								Louise Leighton
+							</a>				
+						</div><!-- .site-branding -->
+					</div>
 				</div>
 				<button class="hamburger hamburger--squeeze" type="button" id="navicon">
 					<div class="container">

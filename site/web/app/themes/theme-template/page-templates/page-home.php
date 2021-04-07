@@ -23,9 +23,10 @@ $banner_img = get_field('banner_image');
 	<section class="gutterless">
 		<div class="wrap">
 			<div class="row-m">
-				<p class="p-l trans fade fade-in swipe-left flex-3">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis recusandae nisi fugit quia modi voluptatibus tempore corporis libero vitae, perspiciatis enim nihil sunt, nesciunt, voluptas iusto velit facere laboriosam tenetur?
-				</p>
+				<div class="p-l trans fade fade-in swipe-left flex-3">
+					<?php echo the_content(); ?>
+
+				</div>
 				<div class="flex-2 ">
 					<?php get_template_part('template-parts/block', 'circles'); ?>
 				</div>

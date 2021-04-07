@@ -1,6 +1,6 @@
 .block-circles {
   position: relative;
-  height: 425px;
+  height: 340px;
   max-width: 550px;
 
   .circle {
@@ -10,10 +10,6 @@
     height: 250px;
     position: absolute;
     border-radius: 100%;
-    img {
-      // width: 120%;
-      // height: 120px;
-    }
   }
   .circle-1 {
     z-index: 2;

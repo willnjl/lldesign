@@ -32,7 +32,7 @@ $link-pad: 4vh 0;
       a {
         &:hover {
           padding-right: 1rem;
-          transition: 0.2s;
+          transition: padding-right 0.2s;
         }
       }
     }
@@ -89,14 +89,6 @@ $link-pad: 4vh 0;
       left: 0;
       width: 100%;
       transition: width 0.5s, padding 0.5s;
-    }
-  }
-}
-
-@media screen and (max-width: $bp-s) {
-  .sidenav-open {
-    .sidenav {
-      padding: 5rem 2rem;
     }
   }
 }

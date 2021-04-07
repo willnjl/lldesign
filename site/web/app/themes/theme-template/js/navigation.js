@@ -27,7 +27,7 @@
     toggleMenu();
   });
 
-  const sidenav = d.getElementById("primary-menu");
+  const sidenav = d.getElementById("site-navigation");
   document.addEventListener("click", function (event) {
     const isClickInside = siteNavigation.contains(event.target);
     const isClickLink = sidenav.contains(event.target);

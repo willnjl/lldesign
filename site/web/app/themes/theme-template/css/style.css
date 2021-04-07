@@ -492,7 +492,7 @@ hr {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
 	width: 40px;
 	height: 4px;
-	background-color: blue;
+	background-color: #523563;
 	border-radius: 4px;
 	position: absolute;
 	transition-property: transform;
@@ -524,7 +524,7 @@ hr {
 .is-active .hamburger-inner,
 .is-active .hamburger-inner::before,
 .is-active .hamburger-inner::after {
-	background-color: blue;
+	background-color: #523563;
 }
 
 /*
@@ -742,7 +742,13 @@ img.gutter {
 }
 
 .site-main {
-	margin-top: 95.5px;
+	margin-top: 59.5px;
+}
+
+@media screen and (max-width: 900px) {
+	.site-main {
+		margin-top: 90.5px;
+	}
 }
 
 .cf {
@@ -928,7 +934,7 @@ img.gutter {
 	.sidenav .menu-item a:hover,
 	.sidenav .page_item a:hover {
 		padding-right: 1rem;
-		transition: 0.2s;
+		transition: padding-right 0.2s;
 	}
 	.sidenav .site-branding {
 		position: absolute;
@@ -981,12 +987,6 @@ img.gutter {
 	}
 }
 
-@media screen and (max-width: 500px) {
-	.sidenav-open .sidenav {
-		padding: 5rem 2rem;
-	}
-}
-
 /*
 ------------------------------------------------
    Navicon
@@ -1015,6 +1015,12 @@ img.gutter {
 
 .site-branding a img {
 	object-fit: contain;
+}
+
+@media screen and (min-width: 900px) {
+	.sidenav__logo {
+		display: none;
+	}
 }
 
 /* banners */
@@ -1051,6 +1057,10 @@ img.gutter {
 	margin-top: 1rem;
 }
 
+.banner .rellax-img {
+	top: -25px;
+}
+
 .hero {
 	position: relative;
 	z-index: -1;
@@ -1082,6 +1092,10 @@ img.gutter {
 	font-size: 1.5rem;
 	color: white;
 	margin-top: 1rem;
+}
+
+.banner .rellax-img {
+	top: -25px;
 }
 
 /* buttons */
@@ -1448,7 +1462,7 @@ textarea {
 
 .block-circles {
 	position: relative;
-	height: 425px;
+	height: 340px;
 	max-width: 550px;
 }
 

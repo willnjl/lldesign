@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e26a5db68f8e6863ea368fb4c9132c70",
+    "content-hash": "158c3e2ea1c6a0b618969fccb943dce7",
     "packages": [
         {
             "name": "composer/installers",
@@ -990,40 +990,22 @@
             "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
         },
         {
-            "name": "wpackagist-plugin/what-the-file",
-            "version": "1.5.4",
+            "name": "wpackagist-plugin/wp-smushit",
+            "version": "3.8.4",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/what-the-file/",
-                "reference": "tags/1.5.4"
+                "url": "https://plugins.svn.wordpress.org/wp-smushit/",
+                "reference": "tags/3.8.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/what-the-file.1.5.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-smushit.3.8.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/what-the-file/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-migrate-db",
-            "version": "1.0.17",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-migrate-db/",
-                "reference": "tags/1.0.17"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.1.0.17.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-migrate-db/"
+            "homepage": "https://wordpress.org/plugins/wp-smushit/"
         }
     ],
     "packages-dev": [
