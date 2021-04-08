@@ -12,6 +12,19 @@
     "node-sass": "^5.0.0",
     "rellax": "^1.12.1"
   },
+   "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w"
