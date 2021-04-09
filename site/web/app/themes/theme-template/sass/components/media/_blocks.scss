@@ -1,11 +1,10 @@
 .block-circles {
   position: relative;
   height: 340px;
-  max-width: 550px;
+  max-width: 525px;
 
   .circle {
     overflow: hidden;
-
     width: 250px;
     height: 250px;
     position: absolute;
@@ -26,18 +25,18 @@
   }
 }
 
-@media screen and (min-width: $bp-m) {
+@media screen and (min-width: $bp-l) {
   .page-home {
     .block-circles {
       margin-left: 4rem;
+      min-width: 415px;
     }
   }
 }
-@media screen and (max-width: $bp-m) {
+@media screen and (max-width: $bp-l) {
   .page-home {
     .block-circles {
       margin-left: unset;
-
       width: 350px;
       height: 350px;
       margin: 4rem auto;
@@ -51,8 +50,9 @@
 @media screen and (max-width: $bp-s) {
   .page-home {
     .block-circles {
-      width: 250px;
       height: 250px;
+      width: 275px;
+
       .circle {
         width: 175px;
         height: 175px;

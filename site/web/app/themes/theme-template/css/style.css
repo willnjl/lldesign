@@ -1058,7 +1058,8 @@ img.gutter {
 }
 
 .banner .rellax-img {
-	top: -25px;
+	height: 102%;
+	top: -35px;
 }
 
 .hero {
@@ -1095,7 +1096,8 @@ img.gutter {
 }
 
 .banner .rellax-img {
-	top: -25px;
+	height: 102%;
+	top: -35px;
 }
 
 /* buttons */
@@ -1463,7 +1465,7 @@ textarea {
 .block-circles {
 	position: relative;
 	height: 340px;
-	max-width: 550px;
+	max-width: 525px;
 }
 
 .block-circles .circle {
@@ -1488,13 +1490,14 @@ textarea {
 	border: 5px solid #523563;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 900px) {
 	.page-home .block-circles {
 		margin-left: 4rem;
+		min-width: 415px;
 	}
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
 	.page-home .block-circles {
 		margin-left: unset;
 		width: 350px;
@@ -1509,8 +1512,8 @@ textarea {
 
 @media screen and (max-width: 500px) {
 	.page-home .block-circles {
-		width: 250px;
 		height: 250px;
+		width: 275px;
 	}
 	.page-home .block-circles .circle {
 		width: 175px;
