@@ -3,7 +3,7 @@
 $img = get_field('banner_image');
 ?>
 
-<section class="banner hero">
+<section class="banner hero rellax-wrapper">
         <div class="wrap">
             <div class="vert-center">
                     <h1 class="span-secondary pink ">

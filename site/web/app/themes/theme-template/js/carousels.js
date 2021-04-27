@@ -5,7 +5,12 @@
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    direction: "vertical",
+    direction: "horizontal",
+    breakpoints: {
+      720: {
+        direction: "vertical",
+      },
+    },
   });
   var galleryTop = new Swiper(".gallery-top", {
     spaceBetween: 10,

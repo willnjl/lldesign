@@ -1057,11 +1057,6 @@ img.gutter {
 	margin-top: 1rem;
 }
 
-.banner .rellax-img {
-	height: 102%;
-	top: -35px;
-}
-
 .hero {
 	position: relative;
 	z-index: -1;
@@ -1093,11 +1088,6 @@ img.gutter {
 	font-size: 1.5rem;
 	color: white;
 	margin-top: 1rem;
-}
-
-.banner .rellax-img {
-	height: 102%;
-	top: -35px;
 }
 
 /* buttons */
@@ -1549,6 +1539,10 @@ textarea {
 	height: 100%;
 }
 
+.featured-img {
+	height: 100%;
+}
+
 .photo-gallery .grid {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 1rem;
@@ -1618,6 +1612,15 @@ textarea {
 
 .further-work .row-m .photo-card {
 	max-width: 250px;
+	margin: 0 10px;
+}
+
+.further-work .row-m .photo-card:first-child {
+	margin-left: 0;
+}
+
+.further-work .row-m .photo-card img {
+	height: 100%;
 }
 
 .gallery {

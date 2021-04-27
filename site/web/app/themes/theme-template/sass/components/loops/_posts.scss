@@ -66,9 +66,15 @@
 
 .further-work {
   .row-m {
-    // justify-content: space-between;
     .photo-card {
+      &:first-child {
+        margin-left: 0;
+      }
       max-width: 250px;
+      margin: 0 10px;
+      img {
+        height: 100%;
+      }
     }
   }
 }

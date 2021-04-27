@@ -15,7 +15,7 @@
 <div class="wrap">
     <?php if(have_rows("additional_images")) :?>
         <div class="gallery">
-            <div class="flex">
+            <div class="row-m">
                 <div class="side-column">
                     <div class="swiper-container gallery-thumbs side-column">
                         <ul class="swiper-wrapper flex-col">
@@ -54,23 +54,27 @@
 </div>
 </section>
 
-<section class="text-block-order flex">
-    <div class="m-l-auto align-right">
-        <h3 class="span-secondary">
-            Order this piece
-        </h3>
-        <ul class="row-s purple p-l">
-            <?php 
-            $url = get_field('etsy_link');
-            if(isset($url)) : ?>
-            <li class="link link--order">
-                <a target="_blank" href="<?= esc_url($url) ?>">buy on etsy<i class="fa fa-caret-right"></i></a>
-            </li>
-            <?php endif ?>
-            <li class="link link--order">
-                <a href="">make an enquiry <i class="fa fa-caret-right"></i></a>
-            </li>
-        </ul>
+<section class="text-block-order">
+    <div class="wrap">
+        <div class="flex">
+            <div class="m-l-auto align-right">
+                <h3 class="span-secondary">
+                    Order this piece
+                </h3>
+                <ul class="row-s purple p-l">
+                    <?php 
+                    $url = get_field('etsy_link');
+                    if(isset($url)) : ?>
+                    <li class="link link--order">
+                        <a target="_blank" href="<?= esc_url($url) ?>">buy on etsy<i class="fa fa-caret-right"></i></a>
+                    </li>
+                    <?php endif ?>
+                    <li class="link link--order">
+                        <a href="">make an enquiry <i class="fa fa-caret-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -101,7 +105,7 @@ if($q->have_posts()) : ?>
                 <a href="<?= $link ?>">
                     <img src="<?= esc_html(get_the_post_thumbnail_url()) ?>" alt="<?= esc_attr(get_the_title())?>" srcset="" />
                     <div class="hover-card flex">
-                        <span>view product<i class="fa fa-caret-right"></i></span>
+                        <span><?= the_title(); ?><i class="fa fa-caret-right"></i></span>
                     </div>
                 </a>
             </li>

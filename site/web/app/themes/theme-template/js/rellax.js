@@ -1,19 +1,35 @@
 let Rellax = require("rellax");
 ((d, w) => {
-  if (d.querySelector(".rellax-img")) {
-    let rellax = new Rellax(".rellax-img", {
-      center: true,
-    });
+  let isRellaxed = false;
+  let rellax;
 
-    let removeRellax = (w, rellax) => {
-      if (w.matchMedia("(max-width: 600px)")) {
-        rellax.destroy();
+  let mediaCheck = () => w.matchMedia("(min-width: 600px)").matches;
+  let rellaxInit = () => {
+    rellax = new Rellax(".rellax-img", {
+      centering: true,
+    });
+    isRellaxed = true;
+  };
+
+  if (d.querySelector(".rellax-img")) {
+    w.onload = () => {
+      if (mediaCheck()) {
+        rellaxInit();
       }
-      return;
     };
 
-    w.onload = removeRellax(w, rellax);
-
-    w.addEventListener("resize", () => removeRellax(w, rellax));
+    w.addEventListener("resize", () => {
+      if (mediaCheck()) {
+        if (isRellaxed && rellax) {
+          rellax.refresh();
+        } else {
+          rellaxInit();
+        }
+      } else {
+        if (isRellaxed && rellax) {
+          rellax.destroy();
+        }
+      }
+    });
   }
 })(document, window);
