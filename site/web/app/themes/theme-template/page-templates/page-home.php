@@ -50,7 +50,7 @@ $banner_img = get_field('banner_image');
 					<li class="photo-card">
 						<a href="<?= $link ?>">
 							<img src="<?= esc_html(get_the_post_thumbnail_url()) ?>" alt="<?= esc_attr(get_the_title())?>" srcset="" class="featured-img" />
-							<div class="hover-card flex">
+							<div class="hover-card flex align-center">
 								<h5 class="white">
 									<?= get_the_title(); ?>
 								</h5>
