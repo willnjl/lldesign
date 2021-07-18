@@ -4,7 +4,7 @@ $navlink-col: $purple;
   text-transform: lowercase;
   letter-spacing: 1px;
   font-weight: 400;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -35,7 +35,7 @@ $navlink-col: $purple;
   .page_item {
     color: $navlink-col;
     margin-left: 3vw;
-    font-size: $p-large;
+    font-size: $text-large;
     &:hover {
       color: $hotpink;
       transition: 0.2s;

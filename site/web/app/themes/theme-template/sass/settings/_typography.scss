@@ -1,17 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:wght@100;300;400;500&display=swap");
 $font-primary: "Montserrat", sans-serif;
 $font-secondary: "Homemade Apple", cursive; //, Helvetica, arial, sans-serif;
-
-$p-xl: 1.6rem;
-$p-large: 1.3rem;
-$p-small: 0.9rem;
+$text-head: 4rem;
+$text-xl: 1.6rem;
+$text-large: 1.3rem;
+$text-small: 0.9rem;
 
 $line-height: 1.8rem;
-
-html,
-body {
-  font-size: 17px;
-}
 
 body {
   color: $text-default;
@@ -52,7 +47,6 @@ p {
 
 strong {
   font-weight: 600;
-  color: $purple;
 }
 
 hr {
@@ -64,6 +58,11 @@ hr {
   padding: 0;
 }
 
+html,
+body {
+  font-size: 18px;
+}
+
 @media screen and (max-width: $bp-m) {
   html,
   body {
@@ -73,23 +72,24 @@ hr {
 @media screen and (max-width: $bp-s) {
   html,
   body {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: $bp-xs) {
-  html,
-  body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
-.p-l {
-  font-size: $p_large;
+.text-head {
+  font-size: $text-head;
+}
+.text-xl {
+  font-size: $text-xl;
+}
+.text-l {
+  font-size: $text-large;
   line-height: 2.1rem;
 }
-.p-xl {
-  font-size: $p_xl;
-}
-.p-s {
+.text-s {
   font-size: 0.75rem;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
 }

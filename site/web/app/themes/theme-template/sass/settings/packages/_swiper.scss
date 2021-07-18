@@ -1,0 +1,19 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  background-color: $pink;
+  height: 500px;
+
+  img {
+    height: 100%;
+    object-fit: scale-down;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $text-default !important;
+}

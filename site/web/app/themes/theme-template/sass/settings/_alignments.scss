@@ -1,22 +1,23 @@
-$padding: 4rem 6vw;
+$padding: 6rem 6vw;
 $wrap-width-large: 1220px;
-$wrap-width-small: 750px;
-
+$wrap-width-small: 900px;
 $nav-height: 95px;
 
 $bp-xl: 1200px;
 $bp-l: 900px;
 $bp-m: 720px;
 $bp-s: 500px;
-$bp-xs: 450px;
 
-$border-radius: 15px;
-
-.padding {
-  padding: 4rem 0;
+.wrap {
+  max-width: $wrap-width-large;
+  margin: 0 auto;
+  position: relative;
 }
-.no-pad {
-  padding-top: 0;
+
+.wrap-tight {
+  max-width: $wrap-width-small;
+  margin: 0 auto;
+  position: relative;
 }
 
 .header-pad {
@@ -28,43 +29,33 @@ footer {
   padding: $padding;
 }
 
-.gutterless {
-  padding-bottom: 0rem;
-}
-
 @media screen and (max-width: $bp-xl) {
   section,
-  footer {
+  footer,
+  .padding {
     height: unset;
     min-height: 100%;
     padding: 4rem 4vw;
   }
-
-  .padding {
-    padding: 4rem 4vw;
-  }
   .header-pad {
-    padding: 1rem 4vw;
+    padding: 10px 4vw;
   }
 }
 @media screen and (max-width: $bp-m) {
-  .padding {
-    padding: 2rem 0;
-  }
   section,
-  footer {
-    padding: 4rem 2rem;
+  footer,
+  .padding {
+    padding: 4rem 0;
   }
+
   .header-pad {
     padding: 10px 2rem;
   }
 }
 @media screen and (max-width: $bp-s) {
-  .padding {
-    padding: 2rem 0;
-  }
   section,
-  footer {
+  footer,
+  .padding {
     padding: 4rem 1rem;
   }
   .header-pad {

@@ -30,3 +30,14 @@
 .featured-img {
   height: 100%;
 }
+
+.rellax-wrapper {
+  overflow-y: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.rellax {
+  width: 100%;
+  object-fit: cover;
+}

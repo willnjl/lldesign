@@ -33,7 +33,7 @@ $banner_img = get_field('banner_image');
 			</div>
 		</div>
 	</section>
-	<section class="photo-gallery">
+	<section class="grid-products">
 		<div class="wrap">
 			<h2 class="span-secondary gutter ">commisions & prints</h2>
 			<?php 
@@ -45,24 +45,12 @@ $banner_img = get_field('banner_image');
 			?>
 			<ul class="grid">
 				<?php if($q->have_posts()): while($q->have_posts()) : $q->the_post();  ?>
-				<?php 
-					$link = get_the_permalink() ?>
-					<li class="photo-card">
-						<a href="<?= $link ?>">
-							<img src="<?= esc_html(get_the_post_thumbnail_url()) ?>" alt="<?= esc_attr(get_the_title())?>" srcset="" class="featured-img" />
-							<div class="hover-card flex align-center">
-								<h5 class="white">
-									<?= get_the_title(); ?>
-								</h5>
-								<span>view product<i class="fa fa-caret-right"></i></span>
-							</div>
-						</a>
-					</li>
+				<?php get_template_part('template-parts/product', 'list'); ?>
 				<?php endwhile; endif; ?>
 			</ul>
 		</div>
 	</section>
-	</main><!-- #main -->
+</main><!-- #main -->
 
 <?php
 get_footer();

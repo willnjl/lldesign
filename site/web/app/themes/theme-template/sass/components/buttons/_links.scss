@@ -1,10 +1,7 @@
 a.link,
 .link {
-  color: $purple;
-  &:hover {
-    color: $purple-light;
-    transition: 0.3s;
-  }
+  color: $blue;
+  text-decoration: underline;
 }
 
 .link--order {

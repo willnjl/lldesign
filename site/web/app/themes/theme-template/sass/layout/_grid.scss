@@ -1,0 +1,30 @@
+.grid {
+  // Fallback
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-products {
+  .grid {
+    grid-template: repeat(auto-fit, minmax(250px, 1fr)) / repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+      );
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: $bp-l) {
+  .row-l {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: $bp-m) {
+  .grid {
+    display: flex;
+  }
+}

@@ -1,64 +1,47 @@
- <section class="banner hero">
-        <div class="wrap">
-            <div class="vert-center">
-                    <h1 class="span-secondary pink">
-                        Louise Leighton
-                    </h1>
-                    <h2>
-                        <?= get_the_title(); ?>
-                    </h2>
-            </div>
+
+<section class="banner rellax-wrapper">
+    <div class="wrap h-full">
+        <div class="flex align-center h-full">
+            <h1 class="text-secondary text-pink ">
+                <?= esc_html(get_the_title()); ?>
+            </h1>
         </div>
-        <img src="<?php echo esc_html(get_the_post_thumbnail_url( $post->id,'full')) ?>" class="rellax bg-img" alt="Watercolour" srcset="" data-rellax-speed="-3">
-	</section>
-<section class="">
+    </div>
+    <img <?php acf_responsive_img(get_post_thumbnail_id(), 'full', '1200px') ?> class="bg-img rellax" data-rellax-speed="-2" alt="<?= esc_html(get_the_title()); ?>" srcset="">
+</section>
+<section class="pb-0">
 <div class="wrap">
     <?php if(have_rows("additional_images")) :?>
-        <div class="gallery">
-            <div class="row-m">
-                <div class="side-column">
-                    <div class="swiper-container gallery-thumbs side-column">
-                        <ul class="swiper-wrapper flex-col">
-                            <?php while(have_rows('additional_images')): the_row();?>
-                            <?php $desc = get_sub_field('description'); $img = get_sub_field('image')  ?>
-                            <li class="product-image swiper-slide">
-                                <img src="<?= $img['sizes']['thumbnail'] ?>" alt=<?= esc_attr($desc) ?>  class="" />
-                            </li>
-                            <?php endwhile; ?>
-                        </ul>
-                    </div>
+    <div class="swiper-container">
+        <ul class="swiper-wrapper">
+            <?php while(have_rows('additional_images')): the_row();?>
+            <?php $desc = get_sub_field('description'); $img = get_sub_field('image')  ?>
+            <li class="swiper-slide">
+                <img src="<?= $img['url'] ?>" alt=<?= esc_attr($desc) ?> class="" />
+                <div class="hover-card">
+                    <p>
+                        <?= $desc ?>
+                    </p>
+                    <p> 
+                        &copy; Louise Leighton Designs <?= date('Y') ?>
+                    </p>
                 </div>
-                <div class="swiper-container gallery-top">
-                    <ul class="swiper-wrapper">
-                        <?php while(have_rows('additional_images')): the_row();?>
-                        <?php $desc = get_sub_field('description'); $img = get_sub_field('image')  ?>
-                        <li class="swiper-slide">
-                            <img src="<?= $img['url'] ?>" alt=<?= esc_attr($desc) ?> class="" />
-                            <div class="hover-card">
-                                <p>
-                                    <?= $desc ?>
-                                </p>
-                                <p> 
-                                    &copy; Louise Leighton Designs <?= date('Y') ?>
-                                </p>
-                            </div>
-                        </li>
-                        <?php endwhile;?>
-                    </ul>
-                    <div class="swiper-button-next swiper-button-white"></div>
-                    <div class="swiper-button-prev swiper-button-white"></div>
-                </div>
-            </div>
-        </div>
+            </li>
+            <?php endwhile;?>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+       
     <?php endif; ?>
 </div>
 </section>
 
-<section class="text-block-order">
+<section class="pb-0">
     <div class="wrap">
         <div class="flex">
-            <div class="m-l-auto align-right">
-                <h3 class="span-secondary">
+            <div class="ml-auto align-right">
+                <h3 class="text-secondary half-gut">
                     Order this piece
                 </h3>
                 <ul class="row-s purple p-l">
@@ -88,27 +71,19 @@
 
 $args = array(
     'post_type' => 'products',
-    'posts_per_page' => 4,
     'post__not_in' => $post->id
 );
 
 $q = new WP_Query($args); 
 
 if($q->have_posts()) : ?>
-<section class="further-work">
+<section class="grid-products">
     <h4 class=" gutter span-secondary">
         further work
     </h4>
-    <ul class="row-m">
+    <ul class="grid">
         <?php while($q->have_posts()) : $q->the_post() ?>
-        <li class="photo-card">
-                <a href="<?= $link ?>">
-                    <img src="<?= esc_html(get_the_post_thumbnail_url()) ?>" alt="<?= esc_attr(get_the_title())?>" srcset="" />
-                    <div class="hover-card flex">
-                        <span><?= the_title(); ?><i class="fa fa-caret-right"></i></span>
-                    </div>
-                </a>
-            </li>
+            <?php get_template_part('template-parts/product', 'list'); ?>
         <?php endwhile; ?>
     </ul>
 </section>

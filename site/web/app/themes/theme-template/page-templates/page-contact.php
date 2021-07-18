@@ -23,17 +23,17 @@ $banner_img = get_field('banner_image');
 	<section>
 		<div class="wrap-tight">
 			<div class="row-m two-cols">
-				<div class="col">
-					<p class="p-l">
+				<div class="col mr-2">
+					<p class="text-l">
 						Louise Leighton's artist studio is based in Exeter in Devon. She often works as an interior designer in Morzine in France.
 					</p>
 				</div>
-				<ul class="m-l-auto p-l col align-right" >
+				<ul class="ml-auto text-l col align-right" >
 					<li>
-						079 XXX XXX
+					<a href="tel:+417455891882">0044 74 558 918 82</a>	
 					</li>
 					<li>
-						<a href="mailto:">lldesign@hotmail.co.uk</a>
+						<a href="mailto:lldesign@hotmail.co.uk">lldesign@hotmail.co.uk</a>
 					</li>
 				</ul>
 			</div>

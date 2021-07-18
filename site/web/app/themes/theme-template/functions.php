@@ -146,11 +146,7 @@ function fiteenten_scripts() {
 	/* 
 		local
 	*/
-	wp_enqueue_script( 'fiteenten-intersection-observers', get_template_directory_uri() . '/js/intersection-observers.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-carousels', get_template_directory_uri() . '/js/carousels.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-rellax.bundle', get_template_directory_uri() . '/js/rellax.bundle.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fiteenten-app', get_template_directory_uri() . '/js/dist/all.min.js', array(), _S_VERSION, true );
 	/* 
 		Packages
 	*/
@@ -206,3 +202,20 @@ function alter_sfquery( $query_args, $sfid ) {
 add_filter( 'sf_edit_query_args', 'alter_sfquery', 20, 2 );
 
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+function acf_responsive_img($image_id,$image_size,$max_width){
+
+	// check the image ID is not blank
+	if($image_id != '') {
+
+		// set the default src image size
+		$image_src = wp_get_attachment_image_url( $image_id, $image_size );
+
+		// set the srcset with various image sizes
+		$image_srcset = wp_get_attachment_image_srcset( $image_id, $image_size );
+
+		// generate the markup for the responsive image
+		echo 'src="'.$image_src.'" srcset="'.$image_srcset.'" sizes="(max-width: '.$max_width.') 100vw, '.$max_width.'"';
+
+	}
+}
