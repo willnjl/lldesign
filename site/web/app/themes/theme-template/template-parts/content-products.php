@@ -17,7 +17,7 @@
             <?php while(have_rows('additional_images')): the_row();?>
             <?php $desc = get_sub_field('description'); $img = get_sub_field('image')  ?>
             <li class="swiper-slide">
-                <img src="<?= $img['url'] ?>" alt=<?= esc_attr($desc) ?> class="" />
+                <img src="<?= esc_url($img['url']); ?>" alt=<?= esc_attr($desc) ?> class="" />
                 <div class="hover-card">
                     <p>
                         <?= $desc ?>
@@ -47,7 +47,7 @@
                 <ul class="row-s purple p-l">
                     <?php 
                     $url = get_field('etsy_link');
-                    if(isset($url)) : ?>
+                    if(!empty($url)) : ?>
                     <li class="link link--order">
                         <a target="_blank" href="<?= esc_url($url) ?>">buy on etsy<i class="fa fa-caret-right"></i></a>
                     </li>

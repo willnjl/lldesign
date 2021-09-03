@@ -35,10 +35,11 @@ $banner_img = get_field('banner_image');
 	</section>
 	<section class="grid-products">
 		<div class="wrap">
-			<h2 class="span-secondary gutter ">commisions & prints</h2>
+			<h2 class="text-secondary gutter ">commissions & prints</h2>
 			<?php 
 				$args = array(
 					'post_type' => 'products',
+					'posts_per_page' => -1
 				);
 
 				$q = new WP_Query($args);
