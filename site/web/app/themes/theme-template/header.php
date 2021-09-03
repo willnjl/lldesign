@@ -25,7 +25,7 @@
 	<header id="masthead" class="site-header header-pad">
 		<div class="wrap">
 			<div class="flex">
-				<div class="site-branding" class="span-secondary">
+				<div class="site-branding" class="text-secondary">
 					<a href="/">
  						Louise Leighton
 					</a>				
@@ -42,7 +42,7 @@
 								?>
 					</nav>
 					<div class="sidenav__logo">
-						<div class="site-branding" class="span-secondary">
+						<div class="site-branding" class="text-secondary">
 							<a href="/">
 								Louise Leighton
 							</a>				

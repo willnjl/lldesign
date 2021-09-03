@@ -15,7 +15,7 @@ var concat = require("gulp-concat");
 
 let local = true; // static or local project ?;
 
-const localUrl = "lldesigns.test"; // Local Site Url
+const localUrl = "lldesigns.test/"; // Local Site Url
 
 //////////////////////////////////////////////////
 

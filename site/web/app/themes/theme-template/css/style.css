@@ -304,7 +304,7 @@ h5 {
 
 p {
   line-height: 1.8rem;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 1rem;
 }
 
@@ -564,15 +564,15 @@ body {
 }
 
 .fa-caret-left:before {
-  content: "";
+  content: "\f0d9";
 }
 
 .fa-caret-right:before {
-  content: "";
+  content: "\f0da";
 }
 
 .fa-wine-glass:before {
-  content: "";
+  content: "\f4e3";
 }
 
 @font-face {

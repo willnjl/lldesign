@@ -1,8 +1,8 @@
 <section class="grey-bg contact-form">
-    <h3 class="span-secondary purple align-center gutter">
-        get in touch
-    </h3>
     <div class="wrap-tight">
+        <h3 class="text-secondary purple text-center gutter">
+            get in touch
+        </h3>
         <p class="align-center">
             Got a question about my work or an idea for a commision? do not hesitate to get in touch with your question. 
         </p>

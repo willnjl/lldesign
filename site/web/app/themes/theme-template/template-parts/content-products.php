@@ -78,7 +78,7 @@ $q = new WP_Query($args);
 
 if($q->have_posts()) : ?>
 <section class="grid-products">
-    <h4 class=" gutter span-secondary">
+    <h4 class=" gutter text-secondary">
         further work
     </h4>
     <ul class="grid">
